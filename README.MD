@@ -1,2 +1,2 @@
-# memberCardServer
-##会员卡原子组件
+# KoaTwoServer
+##REST资源自动生成原子组件
