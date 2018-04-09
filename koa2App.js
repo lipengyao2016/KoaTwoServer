@@ -22,7 +22,7 @@ const _ = require('lodash');
 //const router = require('koa-router')();
 
 // 导入controller middleware:
-const controller = require('./controller');
+const controller = require('./restFrameWork/controller');
 
 
 /*const appKoa = koa();
@@ -155,7 +155,7 @@ app.use(router.routes());*/
 //app.use(router.routes());
 
 // 使用middleware:
-app.use(controller());
+app.use(controller(__dirname));
 
 
 // 在端口3000监听:

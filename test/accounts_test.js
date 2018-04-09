@@ -12,7 +12,7 @@ const _ = require('lodash');
 describe('account Test Case:',()=>{
 
     let accountTestCase = {
-        "name": "liufei55",
+        "name": "liufei66",
         "password": "3456789",
         "email": "wetwffdsf@qq.com",
         "phone": "13410983543",

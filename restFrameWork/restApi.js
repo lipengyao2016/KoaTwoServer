@@ -4,9 +4,9 @@ const BaseDataTranform = require('ComponetFramework').BaseDataTranform;
 const  proxyCommon = require('ComponetFramework').proxy_common;
 const CommonProxy =proxyCommon.Proxy;
 
-const baseProxy = require('./proxy/baseProxy');
+const baseProxy = require('../proxy/baseProxy');
 //const {accountsDB} = require('../models/tables');
-const classMode = require('./classMode').classMode;
+const classMode = require('../classMode').classMode;
 
 const _ = require('lodash');
 

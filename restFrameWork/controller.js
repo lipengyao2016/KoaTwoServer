@@ -1,9 +1,9 @@
 
 const router = require('koa-router')();
 const fs = require('fs');
-const resourceConfig = require('./config/resourceConfig');
+const resourceConfig = require('../config/resourceConfig');
 const restApi = require('./restApi');
-const classMode = require('./classMode').classMode;
+const classMode = require('../classMode').classMode;
 
 const BaseInterface = require('ComponetFramework').BaseInterface;
 const BaseBusiness = require('ComponetFramework').BaseBusiness;
@@ -33,14 +33,14 @@ function addMapping(router, mapping) {
 }
 
 function addFileControllers(router,dir) {
-    var files = fs.readdirSync(__dirname + '/' + dir);
+    var files = fs.readdirSync( dir);
     var js_files = files.filter((f) => {
         return f.endsWith('.js');
     });
 
     for (var f of js_files) {
         console.log(`process controller: ${f}...`);
-        let mapping = require(__dirname + '/' + dir + '/' + f);
+        let mapping = require( dir + '/' + f);
         addMapping(router, mapping);
     }
 }
@@ -85,20 +85,20 @@ function addResourceControllers(router,resourceMap,customerMap) {
 }
 
 
-module.exports = function (dir) {
-    let api_dir = dir || 'apis', // 如果不传参数，扫描目录默认为'controllers'
+module.exports = function (rootDir) {
+    let api_dir = rootDir || 'apis', // 如果不传参数，扫描目录默认为'controllers'
         router = require('koa-router')();
 
     let controllerDir = 'controllers';
-    addFileControllers(router, api_dir);
+    addFileControllers(router, api_dir + '/apis');
 
     let customerMaps = {};
 
 
-    customerMaps[classMode.DataTransform] = searchCustomerObjs(__dirname + '/' + controllerDir + '/datatransform',BaseDataTranform);
-    customerMaps[classMode.Business] = searchCustomerObjs(__dirname + '/' + controllerDir + '/business',BaseBusiness);
-    customerMaps[classMode.Interface]  = searchCustomerObjs(__dirname + '/' + controllerDir + '/interface',BaseInterface);
-    customerMaps[classMode.Proxy]  = searchCustomerObjs(__dirname  + '/proxy',CommonProxy);
+    customerMaps[classMode.DataTransform] = searchCustomerObjs(api_dir + '/' + controllerDir + '/datatransform',BaseDataTranform);
+    customerMaps[classMode.Business] = searchCustomerObjs(api_dir + '/' + controllerDir + '/business',BaseBusiness);
+    customerMaps[classMode.Interface]  = searchCustomerObjs(api_dir + '/' + controllerDir + '/interface',BaseInterface);
+    customerMaps[classMode.Proxy]  = searchCustomerObjs(api_dir  + '/proxy',CommonProxy);
 
 
     addResourceControllers(router,resourceConfig.resourceMap,customerMaps);
