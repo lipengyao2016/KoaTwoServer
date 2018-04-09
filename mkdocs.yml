@@ -1,0 +1,12 @@
+site_name: '会员卡管理业务组件'
+repo_url: 'http://gitlab.cyhl.com.cn:82/CarData/memberCardServer'
+repo_name: 'GitLab'
+site_author : 'lipy'
+docs_dir : 'apidoc'
+site_favicon: 'favicon.ico'
+pages:
+  - [index.md, '主页']
+  - [rest.md, 'REST API Reference','REST API 核心概念']
+  - [packageApi.md, 'package API Reference','package API']
+#### theme type: readthedocs bootstrap cerulean cosmo cyborg slate united yeti
+theme: readthedocs

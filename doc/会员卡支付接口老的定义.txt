@@ -1,0 +1,83 @@
+tradeServer(交易服务)
+ 
+1.交易订单        tradeOrders(id,uuid,sellOrderHref,goodHref,merberCardHref,merberCardUUID,
+isUseMemberCard,tradeNumber,tradeAmount,tradeAt,tradeAddress,tradeType,tradeSource,operator,status,remark,createdAt,modifiedAt) 
+ /api/v1/tradeOrders                                                        post:create  get:list
+ /api/v1/tradeOrders/:tradeOrderUUID                                        post:update  get:retrieve 
+ 
+ 状态分为初始状态(未支付)，部分支付，全部支付，已取消，已关闭。
+ 
+ 
+ 
+2.交易商品对象   tradeObjects(id,uuid,tradeOrderUUID,goodsHref,goodsUUID,quatity,orignAmount,tradeAmount,remark,status,createdAt,modifiedAt)
+ /api/v1/tradeOrders/:tradeOrderUUID/tradeObjects                                             post:create  get:list
+ /api/v1/tradeOrders/:tradeOrderUUID/tradeObjects/:tradeObjectUUID                            post:update  get:retrieve 
+
+ 状态分为初始状态(预支付)，部分支付，全部支付，已取消，已关闭。
+ 
+ 
+ 
+3.交易商品详情   tradeDetails(id,uuid,objectUUID,tradeAmount,tradeNo,status,remark,createdAt,modifiedAt)
+ /api/v1/tradeOrders/:tradeOrderUUID/tradeObjects/:tradeObjectUUID/tradeDetails                       post:create  get:list
+ /api/v1/tradeOrders/:tradeOrderUUID/tradeObjects/:tradeObjectUUID/tradeDetails/:tradeDetailUUID      post:update  get:retrieve 
+ 
+ 状态分为初始状态(预支付)，已支付，已取消，已关闭。
+ 
+ 
+  7.会员卡预支付    /api/v1/prePayOrders                                post: prepare payment order
+     request:
+		 {
+		    merbercardHref:
+		    
+		    (1).传入消费订单详细信息。
+		    customerHref:
+		    sellHref:
+		    remark:
+		    amount:
+		    goods:
+		    [
+		       {
+				       goodHref,
+				       quatity,
+				       price:
+				       remark:
+		       }
+		    ]
+		    
+		    (2).这一块可以传入消费订单链接。orderHref:
+		 }
+ 
+ 
+		 response:
+		 {
+		   tradeOrderHref:'',
+		 }
+		 
+		 
+     (1).遍历消费单中所有的商品列表。
+     (2).获取此会员卡的折扣信息，对商品价格进行打折，并计算单类商品总额，以及所有商品总额。
+     (3).获取此会员卡下面的所有支付服务，包括储值支付，服务次数支付，
+     (4).根据支付策略,对每种商品选择合适的支付方式，并判断是否有足够的余额或者条件来支付，
+         如果有任何一种商品没有找到合适的支付方式时，就默认修改为现金支付。
+     (5).对消费订单生成预支付订单，订单商品，以及订单详情对象，状态全为预支付状态。
+     (6).返回预支付交易订单号。   
+    
+
+ 
+    8.会员卡消费支付   /api/v1/payOrders                                   post: payment order
+		 request:
+		 {
+		    tradeOrderHref:'',
+		    password:'',
+		 }
+ 
+ 
+		 response:
+		 {
+		   result:'success/failed',
+		 }
+  
+     (1).对交易支付订单中的每个商品进行实际的支付业务，根据商品实际的支付结果，返回商品的支付成功状态。
+     (2).支付成功，生成支付记录，并返回支付成功流水号,修改相应订单中商品状态为已支付，
+         当订单中所有商品都支付成功，则修改订单状态为已支付，否则为部分支付，或者未支付。  
+     (3). 新增会员卡的操作流水记录,同时检测是否可升级卡，当可升级时，自动升级。
