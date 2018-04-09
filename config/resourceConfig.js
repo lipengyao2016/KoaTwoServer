@@ -9,6 +9,10 @@ var resourceConfig = {
         {
             resource:'account',
             table:'accounts',
+            extend_api: [
+                {name:'resetPwd', requestMethod:'GET',interfaceMethod:'resetPwd',type:'object'},
+                {name:'countByUserId', requestMethod:'GET',interfaceMethod:'countByUserId',type:'root'},
+            ],
         },
         {
             resource:'customer',

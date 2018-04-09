@@ -12,7 +12,7 @@ const _ = require('lodash');
 describe('account Test Case:',()=>{
 
     let accountTestCase = {
-        "name": "liufei11",
+        "name": "liufei55",
         "password": "3456789",
         "email": "wetwffdsf@qq.com",
         "phone": "13410983543",
@@ -46,9 +46,34 @@ describe('account Test Case:',()=>{
     describe('retrieve test case:', function () {
         it('success retrieve an account  ', function () {
             this.timeout(0);
+            accountUUID = '0xwUtoC6ljoAiqIctOJxRg';
             return request.getRequest(`${directUrl}/accounts/${accountUUID}`).then( ( { res, body} )=>{
 
                 console.log('account test get   :' + JSON.stringify(body));
+
+                expect(res.statusCode).to.equal(200);
+                expect(res.headers['content-type']).to.equal('application/json; charset=utf-8');
+            });
+        });
+
+        it('success resetPwd an account  ', function () {
+            this.timeout(0);
+            accountUUID = '0xwUtoC6ljoAiqIctOJxRg';
+            return request.getRequest(`${directUrl}/accounts/${accountUUID}/resetPwd`,{password:'3333333'}).then( ( { res, body} )=>{
+
+                console.log('account test resetPwd   :' + JSON.stringify(body));
+
+                expect(res.statusCode).to.equal(200);
+                expect(res.headers['content-type']).to.equal('application/json; charset=utf-8');
+            });
+        });
+
+        it('success countByUserId an account  ', function () {
+            this.timeout(0);
+
+            return request.getRequest(`${directUrl}/countByUserId`).then( ( { res, body} )=>{
+
+                console.log('account test countByUserId   :' + JSON.stringify(body));
 
                 expect(res.statusCode).to.equal(200);
                 expect(res.headers['content-type']).to.equal('application/json; charset=utf-8');
@@ -79,6 +104,9 @@ describe('account Test Case:',()=>{
             let qs =
             {
                 //categoryUUID :'nvPhxm0mdVLtAKv7pt5UeQ',
+                name:'zhouyu*',
+               // createdAt:'[2018-04-07 16:38:39,2018-04-08 16:43:32]',
+                password:['111','333'],
             };
             return request.getRequest(`${directUrl}/accounts`,qs).then( ( { res, body} )=>{
 

@@ -40,7 +40,9 @@ app.use(convert(json()));*/
 
 
 // 创建一个Koa对象表示web app本身:
-const app = new Koa();
+const appKoa = new Koa();
+
+const app =require('koa-qs')(appKoa, 'extended');
 
 app.use(async (ctx, next) => {
 

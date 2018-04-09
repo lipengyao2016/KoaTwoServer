@@ -1,5 +1,4 @@
 
-var signProxy = require('../proxy/signProxy');
 
 var fn_signin = async (ctx, next) => {
 
@@ -7,7 +6,9 @@ var fn_signin = async (ctx, next) => {
         password = ctx.request.body.password || '';
     console.log(`signin with name: ${name}, password: ${password}`);
 
-    let ret = await  signProxy.sign(name,password);
+    //let ret = await  signProxy.sign(name,password);
+
+    let ret = {loginStatus:'ok'};
 
     let data = JSON.stringify(ret);
 

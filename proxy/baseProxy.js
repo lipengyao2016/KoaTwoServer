@@ -21,6 +21,7 @@ const generateQueryCondition = proxyCommon.querySQLGenerator({
 function getBaseProxy(table,generateQueryCondition,bRedis = false,convert2DBInfo = dbObjConv.convert2DBInfo
                       ,convert2LogicInfo = dbObjConv.convert2LogicInfo,dateKeys = []) {
 
+
     if(!convert2DBInfo)
     {
         convert2DBInfo = dbObjConv.convert2DBInfo;
@@ -40,11 +41,11 @@ function getBaseProxy(table,generateQueryCondition,bRedis = false,convert2DBInfo
     return basesProxy;
 }
 
-function  getSimpleProxy(tableName) {
+function  getSimpleProxy(tableName,ProxyClass) {
 
     let dbTable = new Table(tableName,knex);
 
-    let basesProxy = new Proxy(dbTable,dbObjConv.convert2DBInfo,dbObjConv.convert2LogicInfo,generateQueryCondition);
+    let basesProxy = new ProxyClass(dbTable,dbObjConv.convert2DBInfo,dbObjConv.convert2LogicInfo,generateQueryCondition);
     return basesProxy;
 }
 

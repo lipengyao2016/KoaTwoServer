@@ -3,6 +3,13 @@ const router = require('koa-router')();
 const fs = require('fs');
 const resourceConfig = require('./config/resourceConfig');
 const restApi = require('./restApi');
+const classMode = require('./classMode').classMode;
+
+const BaseInterface = require('ComponetFramework').BaseInterface;
+const BaseBusiness = require('ComponetFramework').BaseBusiness;
+const BaseDataTranform = require('ComponetFramework').BaseDataTranform;
+const  proxyCommon = require('ComponetFramework').proxy_common;
+const CommonProxy =proxyCommon.Proxy;
 
 function addMapping(router, mapping) {
     for (var url in mapping) {
@@ -19,7 +26,6 @@ function addMapping(router, mapping) {
             router.delete(path, mapping[url]);
             console.log(`register URL mapping: DELETE ${path}`);
         }
-
         else {
             console.log(`invalid URL: ${url}`);
         }
@@ -40,21 +46,61 @@ function addFileControllers(router,dir) {
 }
 
 
-function addResourceControllers(router,resourceMap) {
+function searchCustomerObjs(dir,baseClass) {
+
+    var files = fs.readdirSync( dir);
+
+    let customerObj = {};
+
+    var js_files = files.filter((f) => {
+        return f.endsWith('.js');
+    });
+
+    for (var f of js_files) {
+        console.log(`process : ${f}...`);
+        let classObj = require( dir + '/' + f);
+
+        if(classObj.hasOwnProperty('resource') )
+        {
+            if( baseClass.isPrototypeOf(classObj.resourceClass))
+            {
+                console.log('searchCustomerObjs resource:' + classObj.resource + ',f:' + f);
+                customerObj[classObj.resource] = classObj.resourceClass;
+            }
+
+        }
+    }
+
+    return customerObj;
+}
+
+
+function addResourceControllers(router,resourceMap,customerMap) {
 
      resourceMap.map(resourceItem=>{
          console.log(`process controller: ${resourceItem.resource}...`);
-         let mapping = restApi.getRestApi(resourceItem.resource,resourceItem.table);
+         let mapping = restApi.getRestApi(resourceItem,customerMap);
          addMapping(router, mapping);
      });
 }
 
 
 module.exports = function (dir) {
-    let
-        controllers_dir = dir || 'apis', // 如果不传参数，扫描目录默认为'controllers'
+    let api_dir = dir || 'apis', // 如果不传参数，扫描目录默认为'controllers'
         router = require('koa-router')();
-    addFileControllers(router, controllers_dir);
-    addResourceControllers(router,resourceConfig.resourceMap);
+
+    let controllerDir = 'controllers';
+    addFileControllers(router, api_dir);
+
+    let customerMaps = {};
+
+
+    customerMaps[classMode.DataTransform] = searchCustomerObjs(__dirname + '/' + controllerDir + '/datatransform',BaseDataTranform);
+    customerMaps[classMode.Business] = searchCustomerObjs(__dirname + '/' + controllerDir + '/business',BaseBusiness);
+    customerMaps[classMode.Interface]  = searchCustomerObjs(__dirname + '/' + controllerDir + '/interface',BaseInterface);
+    customerMaps[classMode.Proxy]  = searchCustomerObjs(__dirname  + '/proxy',CommonProxy);
+
+
+    addResourceControllers(router,resourceConfig.resourceMap,customerMaps);
     return router.routes();
 };

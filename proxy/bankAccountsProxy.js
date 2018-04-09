@@ -26,7 +26,7 @@ const generateQueryCondition = proxyCommon.querySQLGenerator({
 });
 
 
-class  BankAccountsProxy extends  Proxy
+class  AccountsProxy extends  Proxy
 {
     constructor(table,convert2DBInfo, convert2LogicInfo, generateQueryCondition,dateKeys)
     {
@@ -36,20 +36,25 @@ class  BankAccountsProxy extends  Proxy
     };
 
 
-    *recharge(uuid,amount)
+    async resetPwd(uuid,password)
     {
-       return yield* this.exclusiveUpdate(uuid,'balanceAmount',amount,true);
+        let data = {uuid,password};
+        return await  this.update(data);
     }
 
-    *paymentCard(uuid,amount)
+
+    async countByUserId()
     {
-        return yield* this.exclusiveUpdate(uuid,'balanceAmount',amount,false);
+        return this.knex( this.name ).select(this.knex.raw('userId')).count('id as count')
+            .groupBy('userId');
     }
 
 }
 
 
 
-module.exports = new BankAccountsProxy(bankAccountsDB,dbObjConv.convert2DBInfo,dbObjConv.convert2LogicInfo
-    ,generateQueryCondition,dateKeys);
+module.exports = {
+    resource:'account',
+    resourceClass:AccountsProxy,
+};
 
