@@ -10,12 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "ComponetFramework": "^1.4.6",
+    "ajv": "^6.4.0",
     "amqp": "^0.2.6",
     "bookshelf": "^0.12.1",
     "commonutils": "^1.1.38",
-    "componet-service-framework": "^1.0.3",
+    "componet-service-framework": "^1.0.0",
     "debug": "^2.2.0",
     "eventproxy": "^0.3.5",
+    "har-schema": "^2.0.0",
     "http-proxy": "^1.16.2",
     "ioredis": "^2.3.0",
     "kafka-node": "^1.6.0",
@@ -37,6 +39,7 @@
     "mysql": "^2.11.1",
     "node-zookeeper-client": "^0.2.2",
     "node_ranaly": "^0.1.1",
+    "performance-now": "^2.1.0",
     "qs": "^6.2.1",
     "request": "^2.74.0",
     "thrift": "^0.11.0"
