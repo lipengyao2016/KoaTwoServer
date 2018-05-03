@@ -106,7 +106,7 @@ describe('account Test Case:',()=>{
                 //categoryUUID :'nvPhxm0mdVLtAKv7pt5UeQ',
                 name:'zhouyu*',
                // createdAt:'[2018-04-07 16:38:39,2018-04-08 16:43:32]',
-                password:['111','333'],
+              //  password:['111','333'],
             };
             return request.getRequest(`${directUrl}/accounts`,qs).then( ( { res, body} )=>{
 

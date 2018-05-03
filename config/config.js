@@ -10,7 +10,7 @@
 "use strict";
 const fs = require('fs');
 const _ = require('lodash');
-const serverConfig = require('../../CommonConfig/serverConfig');
+const serverConfig = require('./serverConfig');
 
 var config = {
     //程序支持NODE的最低版本
@@ -31,7 +31,7 @@ var config = {
     //服务器配置
     server_domain : serverConfig.server_domain,
     is_sendMessage : false,
-    server_port : 8070 ,
+    server_port : 7000 ,
 
     externalServer_domain : serverConfig.ThirdServer_domain,
 

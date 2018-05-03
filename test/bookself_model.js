@@ -10,8 +10,9 @@ const _ = require('lodash');
 const db= require('./bookself_db').bookshelf;
 
 
-var directory = db.Model.extend({
+var directoryModel = db.Model.extend({
     tableName: "directorys",
+    idAttribute: 'uuid',
 
     memberCardObjs: function() {
         return this.hasMany(memberCardModel,'directoryUUID','uuid');
@@ -21,14 +22,20 @@ var directory = db.Model.extend({
 
 var memberCardModel = db.Model.extend({
     tableName: "memberCards",
+    idAttribute: 'uuid',
 
     directoryObjs: function() {
-        return this.belongsTo(directory,'directoryUUID','uuid');
+        return this.belongsTo(directoryModel,'directoryUUID','uuid');
     }
 });
 
+let memberCardInstand = memberCardModel.forge();
+
+let memberCardDirec = memberCardInstand.related('directoryObjs');
+console.log(JSON.stringify(memberCardDirec.relatedData,null,2))
+
 var model = {};
-model.directory = directory;
+model.directory = directoryModel;
 model.memberCard = memberCardModel;
 
 exports.model = model;

@@ -159,8 +159,8 @@ app.use(controller(__dirname));
 
 
 // 在端口3000监听:
-app.listen(8070);
-console.log('app koa2 started at port 8070...');
+app.listen(7000);
+console.log('app koa2 started at port 7000...');
 
 
 onerror(app);

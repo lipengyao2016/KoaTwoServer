@@ -35,3 +35,16 @@ class B extends A{
 
 let b = new B();
 b.fun();
+
+
+function  Data( i) {
+
+    let data = i + ',data';
+    return data;
+}
+
+let d1 = new Data(2);
+console.log(d1.__proto__);
+console.log(Data.prototype);
+
+

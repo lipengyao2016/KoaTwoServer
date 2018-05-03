@@ -65,18 +65,26 @@ model.directory.forge().where('uuid','=','Erbk6T8mhZEwYGuzalDfvw')
 });*/
 
 
-//model.directory.forge({uuid:'e4ZlzHOrd9O4ckZvSV8GkA'}).fetch({withRelated: ['memberCardObjs']}).then(function(model){
- model.directory/*.where('uuid','=','e4ZlzHOrd9O4ckZvSV8GkA')*/.fetchPage({
+model.directory.forge({uuid:'e4ZlzHOrd9O4ckZvSV8GkA'}).fetch({withRelated: ['memberCardObjs']}).then(function(directData){
+/* model.directory/!*.where('uuid','=','e4ZlzHOrd9O4ckZvSV8GkA')*!/.fetchPage({
      limit: 3,
       offset: 0,
-     withRelated: ['memberCardObjs']}).then(function(model){
+     withRelated: ['memberCardObjs']}).then(function(directData){*/
 
   /*  let directorObjs = model.attributes;
     let memberCardObjs = model.relations.memberCardObjs.models.map(singleData=>singleData.attributes);
     directorObjs.memberCards = memberCardObjs;*/
    // console.log(model);
-     let directorObjs = model.toJSON({'shallow':true});
-    console.log(JSON.stringify(directorObjs,null,2));
+     let directorObjs = directData.toJSON({'shallow':false});
+     console.log(JSON.stringify(directorObjs,null,2));
+
+     let t2 = directData.related('memberCardObjs');
+
+     //console.log(JSON.stringify(t2.relatedData,null,2));
+
+    console.log(t2.toJSON());
+
+
 }).catch(function(err){
     console.error(err)
 });

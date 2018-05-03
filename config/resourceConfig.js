@@ -1,7 +1,7 @@
 "use strict";
 const fs = require('fs');
 const _ = require('lodash');
-const serverConfig = require('../../CommonConfig/serverConfig');
+const serverConfig = require('./serverConfig');
 
 var resourceConfig = {
     version : 'v1.0.0',
