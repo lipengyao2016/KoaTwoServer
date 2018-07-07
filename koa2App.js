@@ -19,11 +19,16 @@ const config = require('./config/config');
 const utils = require('commonutils').utils;
 const _ = require('lodash');
 
-//const router = require('koa-router')();
+const Router = require('koa-router');
+
+let router = new Router();
 
 // 导入controller middleware:
-const controller = require('./restFrameWork/controller');
+//const controller = require('./restFrameWork/controller');
+//const proxy = require('koa-proxy2');
 
+const proxy = require('http-proxy-middleware');
+const c2 = require('koa2-connect');
 
 /*const appKoa = koa();
 const app =require('koa-qs')(appKoa, 'extended');*/
@@ -45,13 +50,27 @@ const appKoa = new Koa();
 const app =require('koa-qs')(appKoa, 'extended');
 
 app.use(async (ctx, next) => {
-
     console.log(`${ctx.method} ${ctx.url} logger begin`);
    const start = new Date();
    await next();
    const ms = new Date() - start;
    console.log(`${ctx.method} ${ctx.url} logger end - ${ms}ms`);
 });
+
+
+
+
+/*app.use(proxy({
+    proxy_rules: [
+        {
+            proxy_location: /^\/v(?:0|1)/,
+            proxy_pass: 'http://192.168.100.124',
+            proxy_micro_service: false,
+            proxy_merge_mode: false
+        }
+    ]
+}));*/
+
 
 /*// 对于任何请求，app将调用该异步函数处理请求：
 app.use(async (ctx, next) => {
@@ -124,12 +143,72 @@ app.use(convert(function*(next){
 app.use(convert(staticServer(path.join(__dirname,'public'))));
 app.use(convert(bodyparser({jsonLimit:'100mb'})));
 app.use(convert(json()));
-app.use(convert(function* (next){
-    if(this.method == 'POST' || this.method == 'PUT'){
-        console.log(this.request.body);
+
+app.use(async function (ctx,next){
+    if(ctx.method == 'POST' || ctx.method == 'PUT'){
+        console.log(ctx.request.body);
     }
-    yield* next;
-}));
+
+   /* if(ctx.originalUrl.indexOf('/api') >= 0)
+    {
+       await c2(proxy({target: 'http://localhost:6001', changeOrigin: true}));
+    }
+    else
+    {*/
+        await next();
+    //}
+
+
+});
+
+/*var betterproxy = require('koa-better-http-proxy');
+
+let url = require('url');
+
+app.use(convert(betterproxy('localhosxxxt:60002', {
+    filter: function(ctx) {
+        return ctx.url.indexOf('/api') >= 0;
+    },
+
+    proxyReqPathResolver: function(ctx) {
+        let urlData = url.parse(ctx.url);
+
+        let serverIndex = urlData.path.indexOf('/',1);
+       // let serverName = urlData.path.substr(1,serverIndex-1);
+        let serverPath = urlData.path.substr(serverIndex);
+
+        return serverPath;
+    },
+
+    proxyReqOptDecorator: function(proxyReqOpts, ctx) {
+
+        let urlData = url.parse(ctx.url);
+
+        let serverIndex = urlData.path.indexOf('/',1);
+        let serverName = urlData.path.substr(1,serverIndex-1);
+
+        //let serverPath = urlData.path.substr(serverIndex);
+        //proxyReqOpts.path = serverPath;
+
+        proxyReqOpts.host = 'localhost';
+
+        if(serverName == 'menuServer')
+        {
+            proxyReqOpts.port = 6001;
+        }
+        else if(serverName == 'roleServer')
+        {
+            proxyReqOpts.port = 6002;
+        }
+        else if(serverName == 'userServer')
+        {
+            proxyReqOpts.port = 6003;
+        }
+
+        return proxyReqOpts;
+    }
+
+})));*/
 
 /*const jade = new Jade({
     viewPath: './views',
@@ -146,16 +225,32 @@ app.use(convert(function* (next){
     app: app // equals to jade.use(app) and app.use(jade.middleware)
 });*/
 
-/*app.use(apidoc.routes());
+//app.use(apidoc.routes());
 
-app.use(router.routes());*/
+//app.use(router.routes());
+
+
+router.get('/info', async function (ctx,next) {
+    console.log('info');
+    ctx.body = {status: true,message:"It's works!"};
+    ctx.statusCode = 200;
+}
+);
+
+router.get('/health',async function (ctx,next)  {
+    console.log('health');
+    ctx.body = {
+        status: 'UP'
+    };
+    ctx.statusCode = 200;
+});
 
 
 // add router middleware:
-//app.use(router.routes());
+app.use(router.routes());
 
 // 使用middleware:
-app.use(controller(__dirname));
+//app.use(controller(__dirname));
 
 
 // 在端口3000监听:

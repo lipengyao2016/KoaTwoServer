@@ -92,3 +92,5 @@ console.log("DOMAINNAME: "+dn);
 exports.getDomainName = function(){
     return dn;
 };
+
+exports.getLocalIP = getLocalIP;

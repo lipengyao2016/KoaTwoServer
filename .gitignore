@@ -56,3 +56,7 @@ typings/
 # dotenv environment variables file
 .env
 
+# Dependency directories
+node_modules/
+jspm_packages/
+site/

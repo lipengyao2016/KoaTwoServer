@@ -47,6 +47,8 @@ function  testRSA() {
 
 }
 
-testRSA();
+//testRSA();
 
 //testDecryMD5();
+
+export {testDecryMD5,testRSA};

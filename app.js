@@ -2,13 +2,15 @@
  * Created by Administrator on 2016/8/18.
  */
 const koa = require('koa');
+const bodyparser = require('koa-bodyparser');
+
 const logger = require('koa-logger');
 const onerror = require('koa-onerror');
 const staticServer = require('koa-static');
 const Jade = require('koa-jade');
 const path = require('path');
 const convert = require('koa-convert');
-const bodyparser = require('koa-bodyparser');
+
 const json = require('koa-json');
 const jwt = require('koa-jwt');
 //const xtpl = require('xtplb/koa');
