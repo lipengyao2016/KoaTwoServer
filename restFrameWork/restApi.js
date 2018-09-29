@@ -1,7 +1,7 @@
-const BaseInterface = require('ComponetFramework').BaseInterface;
-const BaseBusiness = require('ComponetFramework').BaseBusiness;
-const BaseDataTranform = require('ComponetFramework').BaseDataTranform;
-const  proxyCommon = require('ComponetFramework').proxy_common;
+const BaseInterface = require('componet-data-framework').BaseInterface;
+const BaseBusiness = require('componet-data-framework').BaseBusiness;
+const BaseDataTranform = require('componet-data-framework').BaseDataTranform;
+const  proxyCommon = require('componet-data-framework').proxy_common;
 const CommonProxy =proxyCommon.Proxy;
 
 const baseProxy = require('../proxy/baseProxy');

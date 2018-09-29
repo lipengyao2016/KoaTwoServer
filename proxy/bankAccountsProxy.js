@@ -3,16 +3,16 @@
  */
 "use strict";
 const moment = require('moment');
-const utils = require('commonutils').utils;
+const utils = require('common-data-utils').utils;
 
-const  proxyCommon = require('ComponetFramework').proxy_common;
+const  proxyCommon = require('componet-data-framework').proxy_common;
 const Proxy =proxyCommon.Proxy;
 const _ = require('lodash');
 
 const {bankAccountsDB} = require('../models/tables');
 const baseProxy = require('./baseProxy');
 const co = require('co');
-const DBObjConvert = require('ComponetFramework').DBObjConver;
+const DBObjConvert = require('componet-data-framework').DBObjConver;
 let dbObjConv = new DBObjConvert();
 
 

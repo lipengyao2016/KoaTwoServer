@@ -18,7 +18,7 @@ const jwt = require('koa-jwt');
 const router = require('./router/router');
 const apidoc = require('./router/apidoc');
 const config = require('./config/config');
-const utils = require('commonutils').utils;
+const utils = require('common-data-utils').utils;
 const _ = require('lodash');
 
 

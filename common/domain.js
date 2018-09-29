@@ -1,5 +1,5 @@
 
-var log = require('commonutils').log.getLogger();
+var log = require('common-data-utils').log.getLogger();
 var os = require('os');
 var config = require('../config/config');
 /**

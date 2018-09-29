@@ -1,17 +1,17 @@
 "use strict";
 const moment = require('moment');
-const utils = require('commonutils').utils;
-const  proxyCommon = require('ComponetFramework').proxy_common;
+const utils = require('common-data-utils').utils;
+const  proxyCommon = require('componet-data-framework').proxy_common;
 const Proxy =proxyCommon.Proxy;
 const _ = require('lodash');
 
-const DBObjConvert = require('ComponetFramework').DBObjConver;
+const DBObjConvert = require('componet-data-framework').DBObjConver;
 let dbObjConv = new DBObjConvert();
 const proxyRedis = require('./proxyRedis');
 
 const knex = require('../models/knex').knex;
 const config = require('../config/config');
-const Table = require('ComponetFramework').tables.baseTable;
+const Table = require('componet-data-framework').tables.baseTable;
 
 
 const generateQueryCondition = proxyCommon.querySQLGenerator({

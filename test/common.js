@@ -9,7 +9,7 @@
 "use strict";
 //var fs = require('fs');
 const config = require('../config/config');
-const request = require('commonutils').request.request;
+const request = require('common-data-utils').request.request;
 
 let options = {
     host: config.server_domain,
@@ -25,4 +25,5 @@ let options = {
 };
 exports.url = `http://${options.host}:${options.port}/api/v1`;
 
+exports.root = `http://${options.host}:${options.port}`;
 exports.request = request;

@@ -5,7 +5,7 @@
 const knex = require('./knex').knex;
 //const cache = require('../common/cacheAble');
 const config = require('../config/config');
-const Table = require('ComponetFramework').tables.baseTable;
+const Table = require('componet-data-framework').tables.baseTable;
 
 /*class Table {
     constructor(name){

@@ -16,8 +16,10 @@ const jwt = require('koa-jwt');
 const apidoc = require('./router/apidoc');*/
 const config = require('./config/config');
 
-const utils = require('commonutils').utils;
+const utils = require('common-data-utils').utils;
 const _ = require('lodash');
+
+const routerRegister = require('./routerRegister');
 
 const Router = require('koa-router');
 
@@ -29,6 +31,7 @@ let router = new Router();
 
 const proxy = require('http-proxy-middleware');
 const c2 = require('koa2-connect');
+const xmlParser = require('koa-xml-body');
 
 /*const appKoa = koa();
 const app =require('koa-qs')(appKoa, 'extended');*/
@@ -40,14 +43,27 @@ const app =require('koa-qs')(appKoa, 'extended');*/
 /*app.use(convert(logger()));
 app.use(convert(staticServer(path.join(__dirname,'public'))));
 app.use(convert(staticServer(path.join(__dirname,'apidoc'))));
-app.use(convert(bodyparser));
-app.use(convert(json()));*/
 
+
+app.use(convert(bodyparser));
+app.use(convert(json()));
+
+*/
 
 // 创建一个Koa对象表示web app本身:
 const appKoa = new Koa();
 
 const app =require('koa-qs')(appKoa, 'extended');
+
+
+app.use(xmlParser({
+    xmlOptions: {
+        explicitArray: false,
+        ignoreAttrs : true,
+        explicitRoot:false
+    },
+}));
+
 
 app.use(async (ctx, next) => {
     console.log(`${ctx.method} ${ctx.url} logger begin`);
@@ -56,8 +72,6 @@ app.use(async (ctx, next) => {
    const ms = new Date() - start;
    console.log(`${ctx.method} ${ctx.url} logger end - ${ms}ms`);
 });
-
-
 
 
 /*app.use(proxy({
@@ -87,7 +101,7 @@ app.use(async (ctx, next) => {
 
 app.use(convert(logger()));
 // JWT
-app.use(convert(function*(next){
+/*app.use(convert(function*(next){
     console.log('query:',this.query);
     let jwt_opt = { secret: config.jwt.public_key, algorithms: ['RS256'] ,passthrough:true};
     //优先使用Header头信息中的认证信息，若没有则使用query中的token
@@ -137,7 +151,7 @@ app.use(convert(function*(next){
     }
 
     yield* next;
-}));
+}));*/
 
 
 app.use(convert(staticServer(path.join(__dirname,'public'))));
@@ -146,8 +160,25 @@ app.use(convert(json()));
 
 app.use(async function (ctx,next){
     if(ctx.method == 'POST' || ctx.method == 'PUT'){
-        console.log(ctx.request.body);
+
+        // delete ctx.request.body.token;
+
+        console.log(`body:\n${JSON.stringify(ctx.request.body,null,2)}`);
     }
+    else if(ctx.method == 'GET')
+    {
+        //delete ctx.queries.token;
+
+        console.log(`query:\n${JSON.stringify(ctx.query,null,2)}`);
+    }
+    await next();
+});
+
+
+app.use(async function (ctx,next){
+/*    if(ctx.method == 'POST' || ctx.method == 'PUT'){
+        console.log(ctx.request.body);
+    }*/
 
    /* if(ctx.originalUrl.indexOf('/api') >= 0)
     {
@@ -230,11 +261,29 @@ app.use(convert(betterproxy('localhosxxxt:60002', {
 //app.use(router.routes());
 
 
-router.get('/info', async function (ctx,next) {
-    console.log('info');
+routerRegister(router);
+
+routerRegister(router,'controllers/business');
+
+router.post('/info', async function (ctx,next) {
+    console.log('info,query',ctx.query);
     ctx.body = {status: true,message:"It's works!"};
     ctx.statusCode = 200;
 }
+);
+
+router.post('/payInfo', async function (ctx,next) {
+        console.log('info,body',ctx.request.body);
+        ctx.body = {status: true,message:"It's works!"};
+        ctx.statusCode = 200;
+    }
+);
+
+router.post('/refundInfo', async function (ctx,next) {
+        console.log('refundInfo,body',ctx.request.body);
+        ctx.body = {status: true,message:"It's works!"};
+        ctx.statusCode = 200;
+    }
 );
 
 router.get('/health',async function (ctx,next)  {
@@ -253,8 +302,18 @@ app.use(router.routes());
 //app.use(controller(__dirname));
 
 
+
+
 // 在端口3000监听:
-app.listen(7000);
+let server =app.listen(7000);
+
+/*server.on('error', function(err,ctx){
+    console.log(err);
+});*/
+
+
+//server.keepAliveTimeout=10000;
+
 console.log('app koa2 started at port 7000...');
 
 

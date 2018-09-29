@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2017/4/14.
  */
-const errorCodeTable = require('commonutils').errorCodeTable;
+const errorCodeTable = require('common-data-utils').errorCodeTable;
 
 exports.setError=function(error,name,status,code,message,description) {
     error.name = name;

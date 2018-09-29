@@ -10,7 +10,7 @@
 "use strict";
 const resourceURI = require('./resourceURI');
 const URIParser = resourceURI.v1;
-const common = require('commonutils').ctrl_common;
+const common = require('common-data-utils').ctrl_common;
 const querystring = require('querystring');
 const _ = require('lodash');
 

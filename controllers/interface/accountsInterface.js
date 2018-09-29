@@ -2,7 +2,7 @@
  * Created by Administrator on 2016/12/15.
  */
 
-const BaseInterface = require('ComponetFramework').BaseInterface;
+const BaseInterface = require('componet-data-framework').BaseInterface;
 const returnResources = require('../returnResources');
 
 class AccountsInterface extends  BaseInterface {

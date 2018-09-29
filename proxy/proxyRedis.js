@@ -3,7 +3,7 @@
  */
 
 const config = require('../config/config');
-const apiCache = require('commonutils').cacheAble;
+const apiCache = require('common-data-utils').cacheAble;
 var package = require('../package.json');
 var key_prefix = package.name?package.name:'';
 var redis = require('../common/redis');

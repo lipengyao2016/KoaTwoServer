@@ -1,9 +1,9 @@
 /**
  * Created by Administrator on 2016/12/15.
  */
-const BaseDataTranform = require('ComponetFramework').BaseDataTranform;
+const BaseDataTranform = require('componet-data-framework').BaseDataTranform;
 const returnResources = require('../returnResources');
-const utils= require('commonutils').utils;
+const utils= require('common-data-utils').utils;
 const _ = require('lodash');
 const crypto = require('crypto');
 
