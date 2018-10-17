@@ -2,8 +2,18 @@ FROM node
 # 维护者信息
 MAINTAINER lipy "lipy@163.com"
 # 将Dockerfile上下文中的nginx.repo复制到容器中的yum源位置
-copy ./ /home/KoaTwoServer/
-WORKDIR /home/KoaTwoServer/
+
+# Create app directory
+RUN mkdir -p /home/node/KoaTwoServer
+WORKDIR /home/node/KoaTwoServer
+
+# Bundle app source
+COPY . /home/node/KoaTwoServer
+RUN npm install \
+    && /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
+    && echo 'Asia/Shanghai' >/etc/timezone
+
+
 # 暴露80端口
 EXPOSE 7000
 

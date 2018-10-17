@@ -16,9 +16,18 @@ spec:
     spec:
       containers:
       - name: koatwo-server
-        image: docker-registry.icarcloud.net:8088/server/koatwo-server:1.0.5
+        image: docker-registry.icarcloud.net:8088/server/koatwo-server:1.0.7
         ports:
         - containerPort: 7000
+        volumeMounts:
+          - name: secrets
+            mountPath: "/etc/secrets"
+            readOnly: true
+      volumes:
+        - name: secrets
+          secret:
+            secretName: mysecret
+
         
         
 ---
