@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: koatwo-server
   labels:
-    server: koatwo
+    server: koatwo-pods
 spec:
   selector:
     matchLabels:
-      server: koatwo
-  replicas: 2 
+      server: koatwo-busi-server
+  replicas: 2
   template: 
     metadata:
       labels:
-        server: koatwo
+        server: koatwo-busi-server
     spec:
       containers:
       - name: koatwo-server
@@ -37,15 +37,15 @@ kind: Service
 metadata:
   name: koatwo-server
   labels:
-    server: koatwo
+    server: koatwo-service
 spec:
   selector:
-    server: koatwo
+    server: koatwo-pods
   type: NodePort
-  # clusterIP: 10.106.100.2
+  #clusterIP: 10.106.100.2
   ports:
   - name: http
     protocol: TCP
-    nodePort: 30004
-    port: 7000
-    targetPort: 7000
+    nodePort: 30008
+    port: 7009
+    targetPort: 7008
