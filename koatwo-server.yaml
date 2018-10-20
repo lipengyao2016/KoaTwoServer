@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: koatwo-server
-        image: docker-registry.icarcloud.net:8088/server/koatwo-server:1.0.7
+        image: docker-registry.icarcloud.net:8088/server/koatwo-server:1.0.8
         ports:
         - containerPort: 7000
         volumeMounts:

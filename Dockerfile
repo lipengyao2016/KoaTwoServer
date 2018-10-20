@@ -9,7 +9,8 @@ WORKDIR /home/node/KoaTwoServer
 
 # Bundle app source
 COPY . /home/node/KoaTwoServer
-RUN npm install \
+RUN   npm config set registry https://registry.npm.taobao.org \
+    && npm install \
     && /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo 'Asia/Shanghai' >/etc/timezone
 
