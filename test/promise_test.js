@@ -12,9 +12,7 @@ let userDatas = [
 
 
 function testPromise() {
-
     console.log('testPromise start ');
-
     let curPromise = new Promise( (resolve,reject) => {
         console.log('promise run start ');
         let sum = 0;
@@ -23,6 +21,7 @@ function testPromise() {
             sum += i;
         }
         console.log('promise run end ');
+        reject('sumerr');
         resolve(sum);
     })
 
@@ -35,3 +34,20 @@ testPromise().then(data=>{
     console.log('get result:' + data);
 })
 console.error('bar');
+
+console.log(`This processor architecture is ${process.arch}`);
+
+//process.abort();
+
+
+
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('unhandledRejection:',promise, reason);
+});
+process.on('rejectionHandled', (promise) => {
+    console.error('rejectionHandled:',promise);
+});
+process.on('uncaughtException', (err) => {
+    console.error( `捕获的异常：${err}\n`);
+});
+moksdf();

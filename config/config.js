@@ -41,8 +41,8 @@ var config = {
     //JWT
     jwt: {
         secret: '123456',
-        private_key : fs.readFileSync(__dirname + '/../ssl/jwt_rsa/jwt_rsa_private_key.pem'),
-        public_key : fs.readFileSync(__dirname + '/../ssl/jwt_rsa/jwt_rsa_public_key.pem')
+      /*  private_key : fs.readFileSync(__dirname + '/../ssl/jwt_rsa/jwt_rsa_private_key.pem'),
+        public_key : fs.readFileSync(__dirname + '/../ssl/jwt_rsa/jwt_rsa_public_key.pem')*/
     },
 
     //knex配置
@@ -87,6 +87,21 @@ var config = {
         password : serverConfig.redis.password,
     },
 
+    redisCluster: [
+        {
+            port: 7006,
+            host: '192.168.7.168'
+        },
+        {
+            port: 7003,
+            host: '192.168.7.167'
+        },
+        {
+            port: 7000,
+            host: '192.168.7.166'
+        },
+    ],
+
     cache : {
         // 缓存开关控制
         open : false,
@@ -115,7 +130,11 @@ var config = {
         OrderServerHost:"http://undefined:5601",
         CustomerServiceMgrServerHost:"http://undefined:5053",
         DeviceBusiServerHost:"http://undefined:5051",
-    }
+    },
+
+    isOpenMQLogger:true,
+
+
 };
 
 function InitConfig()

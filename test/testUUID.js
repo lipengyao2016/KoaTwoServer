@@ -18,7 +18,7 @@ exports.createUUID2 = ()=>{
 
 for(let i = 0;i < 3;i++)
 {
-    console.log(exports.createUUID());
-    //console.log(exports.createUUID2());
+     console.log(exports.createUUID());
+   console.log(exports.createUUID2());
 }
 

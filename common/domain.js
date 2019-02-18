@@ -1,5 +1,5 @@
 
-var log = require('common-data-utils').log.getLogger();
+//var log = require('common-data-utils').log.getLogger();
 var os = require('os');
 var config = require('../config/config');
 /**
@@ -59,7 +59,7 @@ function getLocalIP (name, family) {
     }
     if (ip == null) {
         ip = '127.0.0.1';
-        log.error("get ip error, return 127.0.0.1, please check");
+        //log.error("get ip error, return 127.0.0.1, please check");
     }
 
     return ip;

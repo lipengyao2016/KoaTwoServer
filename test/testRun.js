@@ -15,10 +15,13 @@ function fib ( n)
     return result;
 }
 
-for(let i = 0;i<10;i++)
+let aFind = new fib(3);
+console.log(aFind.constructor(2));
+
+/*for(let i = 0;i<10;i++)
 {
     log.startTime();
     fib(42);
     log.endTime('end fib22 ');
-}
+}*/
 

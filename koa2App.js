@@ -1,6 +1,13 @@
 /**
  * Created by Administrator on 2016/8/18.
  */
+const  packagett = require('./package');
+const easyMonitor = require('easy-monitor');
+easyMonitor(packagett.name);
+
+
+ const log4js = require('./log4js.v2');
+
 const Koa = require('koa');
 const logger = require('koa-logger');
 const onerror = require('koa-onerror');
