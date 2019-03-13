@@ -85,9 +85,8 @@ function addResourceControllers(router,resourceMap,customerMap) {
 }
 
 
-module.exports = function (rootDir) {
-    let api_dir = rootDir || 'apis', // 如果不传参数，扫描目录默认为'controllers'
-        router = require('koa-router')();
+module.exports = function (router,rootDir) {
+    let api_dir = rootDir || 'apis'; // 如果不传参数，扫描目录默认为'controllers';
 
     let controllerDir = 'controllers';
     addFileControllers(router, api_dir + '/apis');

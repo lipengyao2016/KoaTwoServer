@@ -14,15 +14,15 @@ var serverConfig = {
     server_domain : 'localhost',
 	
 	//文件服务器路径
-	fileServer_domain : '192.168.7.210',
+	fileServer_domain : '192.168.7.6',
 
-    ThirdServer_domain : '192.168.7.210',
+    ThirdServer_domain : '192.168.7.6',
 
     knex_connection : {
-        host : '192.168.7.210',
+        host : '192.168.7.188',
         user : 'root',
         password : '123456',
-        port : 3306
+        port : 8066
     },
    
     //redis配置

@@ -2,8 +2,8 @@
  * Created by Administrator on 2016/8/18.
  */
 const  packagett = require('./package');
-const easyMonitor = require('easy-monitor');
-easyMonitor(packagett.name);
+/*const easyMonitor = require('easy-monitor');
+easyMonitor(packagett.name);*/
 
 
  const log4js = require('./log4js.v2');
@@ -33,7 +33,7 @@ const Router = require('koa-router');
 let router = new Router();
 
 // 导入controller middleware:
-//const controller = require('./restFrameWork/controller');
+const controller = require('./restFrameWork/controller');
 //const proxy = require('koa-proxy2');
 
 const proxy = require('http-proxy-middleware');
@@ -265,12 +265,10 @@ app.use(convert(betterproxy('localhosxxxt:60002', {
 
 //app.use(apidoc.routes());
 
-//app.use(router.routes());
-
-
+controller(router,__dirname);
 routerRegister(router);
-
 routerRegister(router,'controllers/business');
+
 
 router.post('/info', async function (ctx,next) {
     console.log('info,query',ctx.query);
@@ -295,6 +293,20 @@ router.post('/refundInfo', async function (ctx,next) {
 
 router.get('/health',async function (ctx,next)  {
     console.log('health');
+
+    const now = Date.now();
+    let  i = 1;
+    while (Date.now() - now < 5000)
+    {
+        i = (i+1) * (i+2);
+        if(i>100000000)
+        {
+            i = 1;
+        }
+    };
+
+    console.log('health,',i);
+
     ctx.body = {
         status: 'UP'
     };
@@ -302,11 +314,9 @@ router.get('/health',async function (ctx,next)  {
 });
 
 
+
 // add router middleware:
 app.use(router.routes());
-
-// 使用middleware:
-//app.use(controller(__dirname));
 
 
 

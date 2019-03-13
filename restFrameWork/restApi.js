@@ -9,6 +9,7 @@ const baseProxy = require('../proxy/baseProxy');
 const classMode = require('../classMode').classMode;
 
 const _ = require('lodash');
+const co  =require('co');
 
 
 /*let resource = 'account';
@@ -19,7 +20,7 @@ let table = 'accounts';*/
 
 var wrapBusiApi = function (busiApi,func) {
    return async (ctx, next) => {
-         return await  func.call(busiApi,ctx);
+         return await co(func.call(busiApi,ctx));
     };
 }
 
@@ -107,6 +108,9 @@ function getRestApi(resourceItem,customerMap) {
 
 
     let accountApi = new InterfaceClass(new DataTranformClass(resourceName),new BusinessClass(baseProxy.getSimpleProxy(tableName,ProxyClass)));
+
+
+
     return makeRestfulApi(resourceName,accountApi,resourceItem.extend_api );
 }
 

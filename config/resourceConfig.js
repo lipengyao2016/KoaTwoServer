@@ -6,15 +6,7 @@ const serverConfig = require('./serverConfig');
 var resourceConfig = {
     version : 'v1.0.0',
     resourceMap:[
-        {
-            resource:'account',
-            table:'accounts',
-            extend_api: [
-                {name:'resetPwd', requestMethod:'GET',interfaceMethod:'resetPwd',type:'object'},
-                {name:'countByUserId', requestMethod:'GET',interfaceMethod:'countByUserId',type:'root'},
-            ],
-        },
-        {
+       /* {
             resource:'customer',
             table:'customers',
         },
@@ -26,7 +18,30 @@ var resourceConfig = {
             resource:'user',
             table:'user',
         },
-
+        {
+            resource:'account',
+            table:'accounts',
+            extend_api: [
+                {name:'resetPwd', requestMethod:'GET',interfaceMethod:'resetPwd',type:'object'},
+                {name:'countByUserId', requestMethod:'GET',interfaceMethod:'countByUserId',type:'root'},
+            ],
+        },*/
+        {
+            resource:'vendororder',
+            table:'vendororders',
+        },
+        {
+            resource:'vendorrecord',
+            table:'vendorrecords',
+        },
+        {
+            resource:'paydetail',
+            table:'paydetails',
+        },
+        {
+            resource:'merchandisedetail',
+            table:'merchandisedetails',
+        },
     ],
 
 

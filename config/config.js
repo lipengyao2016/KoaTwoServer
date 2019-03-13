@@ -48,10 +48,10 @@ var config = {
     //knex配置
     knex_client : 'mysql',
     knex_connection : {
-        host : /*serverConfig.knex_connection.host*/ '192.168.7.6',
+        host : serverConfig.knex_connection.host /*'192.168.7.6'*/,
         user : serverConfig.knex_connection.user,
         password : serverConfig.knex_connection.password,
-        database : 'userTest',
+        database : 'VD_VendorOrderServerDB',
         port : serverConfig.knex_connection.port,
     },
     knex_pool : {
@@ -156,7 +156,7 @@ function InitConfig()
 
 InitConfig();
 
-//console.log('config:',JSON.stringify(config));
+console.log('config:',config);
 
 if (process.env.server_port) {
     config.server_port = process.env.server_port;

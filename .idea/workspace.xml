@@ -2,23 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2130195-c6d6-4c05-93aa-45eb9920909e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/common/clusterRedis.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/log4js.v2.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/event/eventTest.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/event/processTest.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/memleak/memleak.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/redis/redisTest.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/common/objectUtils.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/entity/paydetails_test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/entity/vendorOrders_test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/entity/vendorRecords_test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/tcp/tcpClient.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/tcp/tcpServer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/testFuShu.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/common/domain.js" afterPath="$PROJECT_DIR$/common/domain.js" />
       <change beforePath="$PROJECT_DIR$/config/config.js" afterPath="$PROJECT_DIR$/config/config.js" />
+      <change beforePath="$PROJECT_DIR$/config/resourceConfig.js" afterPath="$PROJECT_DIR$/config/resourceConfig.js" />
+      <change beforePath="$PROJECT_DIR$/config/serverConfig.js" afterPath="$PROJECT_DIR$/config/serverConfig.js" />
       <change beforePath="$PROJECT_DIR$/koa2App.js" afterPath="$PROJECT_DIR$/koa2App.js" />
-      <change beforePath="$PROJECT_DIR$/koatwo-server.yaml" afterPath="$PROJECT_DIR$/koatwo-server.yaml" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/test/promise_test.js" afterPath="$PROJECT_DIR$/test/promise_test.js" />
-      <change beforePath="$PROJECT_DIR$/test/testRun.js" afterPath="$PROJECT_DIR$/test/testRun.js" />
-      <change beforePath="$PROJECT_DIR$/test/testUUID.js" afterPath="$PROJECT_DIR$/test/testUUID.js" />
+      <change beforePath="$PROJECT_DIR$/proxy/baseProxy.js" afterPath="$PROJECT_DIR$/proxy/baseProxy.js" />
+      <change beforePath="$PROJECT_DIR$/restFrameWork/controller.js" afterPath="$PROJECT_DIR$/restFrameWork/controller.js" />
+      <change beforePath="$PROJECT_DIR$/restFrameWork/restApi.js" afterPath="$PROJECT_DIR$/restFrameWork/restApi.js" />
+      <change beforePath="$PROJECT_DIR$/test/memleak/memleak.js" afterPath="$PROJECT_DIR$/test/memleak/memleak.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,29 +43,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="log4js.v2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log4js.v2.js">
+      <file leaf-file-name="basetables.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/models/basetables.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="909">
-              <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+            <state relative-caret-position="361">
+              <caret line="19" column="64" lean-forward="false" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="koa2App.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/koa2App.js">
+      <file leaf-file-name="vendorRecords_test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/entity/vendorRecords_test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-              <folding>
-                <element signature="e#2025#2263#0" expanded="false" />
-                <element signature="e#2266#2573#0" expanded="false" />
-                <element signature="e#2612#4210#0" expanded="false" />
-                <element signature="e#4775#4876#0" expanded="false" />
-                <element signature="e#4881#5032#0" expanded="false" />
-                <element signature="e#5070#6295#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="2090">
+              <caret line="110" column="11" lean-forward="false" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testUUID.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/testUUID.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testFuShu.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/testFuShu.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,78 +86,58 @@
       <file leaf-file-name="redisTest.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/redis/redisTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+            <state relative-caret-position="608">
+              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apollConfigTest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/eureka_apoll/apollConfigTest.js">
+      <file leaf-file-name="connector.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/ioredis/lib/connectors/connector.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tcpServer.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/tcp/tcpServer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
-              <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="promise_test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/promise_test.js">
+      <file leaf-file-name="tcpClient.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/tcp/tcpClient.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="304">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="processTest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/event/processTest.js">
+      <file leaf-file-name="clusterRedis.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/clusterRedis.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="memleak.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/memleak/memleak.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eventTest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/event/eventTest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="28" column="2" lean-forward="true" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.d.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/@types/node/index.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4364">
-              <caret line="1251" column="20" lean-forward="false" selection-start-line="1251" selection-start-column="20" selection-end-line="1251" selection-end-column="20" />
+            <state relative-caret-position="1691">
+              <caret line="89" column="4" lean-forward="false" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -160,11 +154,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>memberApi</find>
-      <find>membercardApi</find>
-      <find>membercards</find>
-      <find>membercard</find>
-      <find>member</find>
       <find>memberCardService</find>
       <find>operatorRecordApi</find>
       <find>memberCardType</find>
@@ -190,11 +179,13 @@
       <find>componet-data-framework</find>
       <find>commonutils</find>
       <find>ComponetFramework</find>
+      <find>controller</find>
+      <find>baseProxy</find>
+      <find>payModeTemplate</find>
+      <find>vendororder</find>
+      <find>vendorrecord</find>
     </findStrings>
     <replaceStrings>
-      <replace>membercardServiceApi</replace>
-      <replace>membercardService</replace>
-      <replace>membercardServices</replace>
       <replace>memberCard</replace>
       <replace>operatorRecord</replace>
       <replace>bankAccountApi</replace>
@@ -222,6 +213,9 @@
       <replace>data</replace>
       <replace>common-data-utils</replace>
       <replace>componet-data-framework</replace>
+      <replace>vendororder</replace>
+      <replace>vendorrecord</replace>
+      <replace>paydetail</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -230,20 +224,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.babelrc" />
-        <option value="$PROJECT_DIR$/test/bankAccounts_test.js" />
-        <option value="$PROJECT_DIR$/test/graphOrignTest.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/test/graphqlHelloTest.js" />
-        <option value="$PROJECT_DIR$/test/merchantsSchema.js" />
-        <option value="$PROJECT_DIR$/test/eventTest.js" />
-        <option value="$PROJECT_DIR$/test/eurekaTest.js" />
-        <option value="$PROJECT_DIR$/test/apollConfigTest.js" />
-        <option value="$PROJECT_DIR$/test/eurekaClient.js" />
-        <option value="$PROJECT_DIR$/test/rabbitmqSendTest.js" />
-        <option value="$PROJECT_DIR$/test/rabbitmqRecvTest.js" />
-        <option value="$PROJECT_DIR$/test/amqpLibClient.js" />
-        <option value="$PROJECT_DIR$/test/amqpLibSendTest.js" />
         <option value="$PROJECT_DIR$/test/amqpLibRecvTest.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/test/amqpBaseClient.js" />
@@ -257,8 +237,6 @@
         <option value="$PROJECT_DIR$/test/amqp/amqpLibDeplayTest.js" />
         <option value="$PROJECT_DIR$/test/wx/demo.js" />
         <option value="$PROJECT_DIR$/controllers/interface/accountsInterface.js" />
-        <option value="$PROJECT_DIR$/proxy/baseProxy.js" />
-        <option value="$PROJECT_DIR$/restFrameWork/controller.js" />
         <option value="$PROJECT_DIR$/restFrameWork/restRouter.js" />
         <option value="$PROJECT_DIR$/restFrameWork/routerRegister.js" />
         <option value="$PROJECT_DIR$/test/users_test.js" />
@@ -272,15 +250,31 @@
         <option value="$PROJECT_DIR$/test/testRun.js" />
         <option value="$PROJECT_DIR$/test/testUUID.js" />
         <option value="$PROJECT_DIR$/log4js.v2.js" />
-        <option value="$PROJECT_DIR$/config/config.js" />
         <option value="$PROJECT_DIR$/common/clusterRedis.js" />
         <option value="$PROJECT_DIR$/test/redis/redisTest.js" />
-        <option value="$PROJECT_DIR$/test/memleak/memleak.js" />
         <option value="$PROJECT_DIR$/test/event/eventTesyt.js" />
         <option value="$PROJECT_DIR$/test/event/eventTest.js" />
         <option value="$PROJECT_DIR$/test/promise_test.js" />
         <option value="$PROJECT_DIR$/test/event/processTest.js" />
+        <option value="$PROJECT_DIR$/test/memleak/memleak.js" />
+        <option value="$PROJECT_DIR$/restFrameWork/controller.js" />
         <option value="$PROJECT_DIR$/koa2App.js" />
+        <option value="$PROJECT_DIR$/common/objectUtils.js" />
+        <option value="$PROJECT_DIR$/proxy/baseProxy.js" />
+        <option value="$PROJECT_DIR$/restFrameWork/restApi.js" />
+        <option value="$PROJECT_DIR$/node_modules/componet-data-framework/lib/controllers/datatransform/BaseDataTranform.js" />
+        <option value="$PROJECT_DIR$/config/config.js" />
+        <option value="$PROJECT_DIR$/config/resourceConfig.js" />
+        <option value="$PROJECT_DIR$/config/serverConfig.js" />
+        <option value="$PROJECT_DIR$/node_modules/common-data-utils/lib/controllers/common.js" />
+        <option value="$PROJECT_DIR$/node_modules/componet-data-framework/lib/proxy/common.js" />
+        <option value="$PROJECT_DIR$/test/entity/vendorOrders_test.js" />
+        <option value="$PROJECT_DIR$/test/entity/paydetails_test.js" />
+        <option value="$PROJECT_DIR$/test/entity/vendorRecords_test.js" />
+        <option value="$PROJECT_DIR$/node_modules/componet-data-framework/lib/models/basetables.js" />
+        <option value="$PROJECT_DIR$/test/testFuShu.js" />
+        <option value="$PROJECT_DIR$/test/tcp/tcpClient.js" />
+        <option value="$PROJECT_DIR$/test/tcp/tcpServer.js" />
       </list>
     </option>
   </component>
@@ -336,35 +330,13 @@
             <path>
               <item name="KoaTwoServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="KoaTwoServer" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KoaTwoServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KoaTwoServer" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KoaTwoServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KoaTwoServer" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="KoaTwoServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="KoaTwoServer" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka_apoll" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KoaTwoServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KoaTwoServer" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="event" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KoaTwoServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KoaTwoServer" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="tcp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -388,19 +360,19 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\WebServer\Application\source\demo\KoaTwoServer\test" />
+      <recent name="E:\WebServer\Application\source\demo\KoaTwoServer\test\entity" />
+      <recent name="E:\WebServer\Application\source\demo\KoaTwoServer\common" />
+      <recent name="E:\WebServer\Application\source\demo\KoaTwoServer\test\redis" />
+      <recent name="E:\WebServer\Application\source\demo\KoaTwoServer" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\WebServer\Application\source\demo\KoaTwoServer" />
       <recent name="E:\WebServer\Application\source\demo\KoaTwoServer\test\crpto" />
       <recent name="E:\WebServer\Application\source\demo\KoaTwoServer\test\thrift" />
       <recent name="E:\WebServer\Application\source\demo\KoaTwoServer\test\graphQl" />
       <recent name="E:\WebServer\Application\source\demo\KoaTwoServer\test\eureka_apoll" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\WebServer\Application\source\demo\KoaTwoServer\test\redis" />
-      <recent name="E:\WebServer\Application\source\demo\KoaTwoServer\common" />
-      <recent name="E:\WebServer\Application\source\demo\KoaTwoServer" />
-      <recent name="E:\WebServer\Application\source\demo\KoaTwoServer\test" />
-      <recent name="E:\WebServer\Application\source\demo\KoaTwoServer\restFrameWork" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -415,13 +387,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.processTest.js">
-    <configuration name="eventTest.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="eventTest.js" working-dir="$PROJECT_DIR$/test/event" />
-    <configuration name="memleak.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="memleak.js" working-dir="$PROJECT_DIR$/test/memleak" />
-    <configuration name="processTest.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="processTest.js" working-dir="$PROJECT_DIR$/test/event" />
-    <configuration name="promise_test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="promise_test.js" working-dir="$PROJECT_DIR$/test" />
+  <component name="RunManager" selected="Node.js.tcpClient.js">
     <configuration name="redisTest.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="redisTest.js" working-dir="$PROJECT_DIR$/test/redis" />
+    <configuration name="tcpClient.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="tcpClient.js" working-dir="$PROJECT_DIR$/test/tcp" />
+    <configuration name="tcpServer.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="tcpServer.js" working-dir="$PROJECT_DIR$/test/tcp" />
     <configuration name="testCrpto.js (2)" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="testCrpto.js" working-dir="$PROJECT_DIR$/app" />
+    <configuration name="testFuShu.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="testFuShu.js" working-dir="$PROJECT_DIR$/test" />
+    <configuration name="testUUID.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="testUUID.js" working-dir="$PROJECT_DIR$/test" />
     <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
       <node-interpreter value="project" />
       <envs />
@@ -436,19 +408,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Node.js.testCrpto.js (2)" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.redisTest.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.memleak.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.eventTest.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.promise_test.js" />
-      <item index="5" class="java.lang.String" itemvalue="Node.js.processTest.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.testUUID.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.testFuShu.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.redisTest.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.tcpServer.js" />
+      <item index="5" class="java.lang.String" itemvalue="Node.js.tcpClient.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.processTest.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.promise_test.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.eventTest.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.memleak.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.redisTest.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.tcpClient.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.tcpServer.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.redisTest.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.testFuShu.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.testUUID.js" />
       </list>
     </recent_temporary>
   </component>
@@ -590,7 +562,16 @@
       <workItem from="1548036020630" duration="646000" />
       <workItem from="1548473003639" duration="6445000" />
       <workItem from="1548554153248" duration="1975000" />
-      <workItem from="1550454636555" duration="6794000" />
+      <workItem from="1550454636555" duration="7467000" />
+      <workItem from="1550541004933" duration="9162000" />
+      <workItem from="1550627632191" duration="16059000" />
+      <workItem from="1550715226691" duration="17000" />
+      <workItem from="1551079597462" duration="665000" />
+      <workItem from="1551346474049" duration="967000" />
+      <workItem from="1552040910064" duration="122000" />
+      <workItem from="1552041518320" duration="148000" />
+      <workItem from="1552444094308" duration="126000" />
+      <workItem from="1552472570712" duration="1192000" />
     </task>
     <task id="LOCAL-00001" summary="1.实现目录，会员卡类型，会员资源。">
       <created>1517222293531</created>
@@ -732,43 +713,50 @@
       <option name="project" value="LOCAL" />
       <updated>1540007310077</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="1.清除node_modules。">
+      <created>1550479954125</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1550479954125</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="fileServer_Test_Case__file_upload_test_case__success_file_activeMember_data - 2018.09.29 at 16h 30m 27s.xml">
-      <configuration name="fileServer Test Case:.file upload test case:.success file activeMember data" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="paydetails_Test_Case__list_test_case__list_paydetailss__ - 2019.02.20 at 16h 21m 37s.xml">
+      <configuration name="paydetails Test Case:.list test case:.list paydetailss  " configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="fileServer_Test_Case__file_upload_test_case__success_file_activeMember_data - 2018.09.29 at 16h 33m 05s.xml">
-      <configuration name="fileServer Test Case:.file upload test case:.success file activeMember data" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="vendororders_Test_Case__list_test_case__list_vendororderss__ - 2019.02.20 at 16h 19m 00s.xml">
+      <configuration name="vendororders Test Case:.list test case:.list vendororderss  " configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="fileServer_Test_Case__file_upload_test_case__success_file_activeMember_data - 2018.09.29 at 16h 35m 15s.xml">
-      <configuration name="fileServer Test Case:.file upload test case:.success file activeMember data" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="vendororders_Test_Case__list_test_case__list_vendororderss__ - 2019.02.20 at 16h 20m 44s.xml">
+      <configuration name="vendororders Test Case:.list test case:.list vendororderss  " configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="fileServer_Test_Case__file_upload_test_case__success_file_activeMember_data - 2018.09.29 at 16h 36m 45s.xml">
-      <configuration name="fileServer Test Case:.file upload test case:.success file activeMember data" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="vendorrecords_Test_Case__create_test_case__success_create_an_vendorrecords - 2019.02.20 at 17h 26m 35s.xml">
+      <configuration name="vendorrecords Test Case:.create test case:.success create an vendorrecords" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="fileServer_Test_Case__file_upload_test_case__success_file_activeMember_data - 2018.09.29 at 16h 38m 47s.xml">
-      <configuration name="fileServer Test Case:.file upload test case:.success file activeMember data" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="vendorrecords_Test_Case__create_test_case__success_create_an_vendorrecords - 2019.02.20 at 17h 49m 56s.xml">
+      <configuration name="vendorrecords Test Case:.create test case:.success create an vendorrecords" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="fileServer_Test_Case__file_upload_test_case__success_file_activeMember_data - 2018.09.29 at 17h 26m 38s.xml">
-      <configuration name="fileServer Test Case:.file upload test case:.success file activeMember data" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="vendorrecords_Test_Case__list_test_case__list_vendorrecordss__ - 2019.02.20 at 16h 20m 05s.xml">
+      <configuration name="vendorrecords Test Case:.list test case:.list vendorrecordss  " configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="fileServer_Test_Case__file_upload_test_case__success_file_activeMember_data - 2018.09.29 at 17h 28m 30s.xml">
-      <configuration name="fileServer Test Case:.file upload test case:.success file activeMember data" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="vendorrecords_Test_Case__list_test_case__list_vendorrecordss__ - 2019.02.20 at 16h 22m 13s.xml">
+      <configuration name="vendorrecords Test Case:.list test case:.list vendorrecordss  " configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="fileServer_Test_Case__file_upload_test_case__success_file_findOwnerMemberByWxData_data - 2018.09.29 at 16h 39m 04s.xml">
-      <configuration name="fileServer Test Case:.file upload test case:.success file findOwnerMemberByWxData data" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="vendorrecords_Test_Case__list_test_case__list_vendorrecordss__ - 2019.02.20 at 17h 27m 48s.xml">
+      <configuration name="vendorrecords Test Case:.list test case:.list vendorrecordss  " configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="fileServer_Test_Case__file_upload_test_case__success_file_findOwnerMemberByWxData_data - 2018.09.29 at 17h 26m 23s.xml">
-      <configuration name="fileServer Test Case:.file upload test case:.success file findOwnerMemberByWxData data" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="vendorrecords_Test_Case__list_test_case__list_vendorrecordss__ - 2019.02.20 at 17h 28m 42s.xml">
+      <configuration name="vendorrecords Test Case:.list test case:.list vendorrecordss  " configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="fileServer_Test_Case__file_upload_test_case__success_file_findOwnerMemberByWxData_data - 2018.09.29 at 17h 28m 43s.xml">
-      <configuration name="fileServer Test Case:.file upload test case:.success file findOwnerMemberByWxData data" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="vendorrecords_Test_Case__list_test_case__list_vendorrecordss__ - 2019.02.20 at 17h 51m 31s.xml">
+      <configuration name="vendorrecords Test Case:.list test case:.list vendorrecordss  " configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="556382000" />
+    <option name="totallyTimeSpent" value="585513000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -782,17 +770,16 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18395658" sideWeight="0.48181817" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988507" sideWeight="0.49758744" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41494253" sideWeight="0.5084439" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28045976" sideWeight="0.4849216" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33678162" sideWeight="0.49758744" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33103448" sideWeight="0.4849216" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48505747" sideWeight="0.49758744" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24969843" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3091954" sideWeight="0.49155608" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42068964" sideWeight="0.4885404" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.49155608" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42528737" sideWeight="0.4885404" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17852835" sideWeight="0.5181818" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -800,9 +787,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17852835" sideWeight="0.5105634" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988507" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3321839" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1082,7 +1070,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/restFrameWork/restApi.js</url>
-          <line>41</line>
+          <line>42</line>
           <option name="timeStamp" value="146" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -1127,7 +1115,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/restFrameWork/restApi.js</url>
-          <line>27</line>
+          <line>28</line>
           <option name="timeStamp" value="157" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -1152,7 +1140,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/restFrameWork/restApi.js</url>
-          <line>34</line>
+          <line>35</line>
           <option name="timeStamp" value="163" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -1177,7 +1165,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/restFrameWork/restApi.js</url>
-          <line>47</line>
+          <line>48</line>
           <option name="timeStamp" value="168" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -1192,7 +1180,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/restFrameWork/restApi.js</url>
-          <line>87</line>
+          <line>88</line>
           <option name="timeStamp" value="171" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -1207,18 +1195,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/restFrameWork/restApi.js</url>
-          <line>108</line>
+          <line>109</line>
           <option name="timeStamp" value="187" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/restFrameWork/restApi.js</url>
-          <line>95</line>
+          <line>96</line>
           <option name="timeStamp" value="188" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/restFrameWork/restApi.js</url>
-          <line>109</line>
-          <option name="timeStamp" value="189" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/controllers/datatransform/accountTranform.js</url>
@@ -1237,7 +1220,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/restFrameWork/restApi.js</url>
-          <line>62</line>
+          <line>63</line>
           <option name="timeStamp" value="206" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -1262,7 +1245,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/restFrameWork/controller.js</url>
-          <line>102</line>
+          <line>101</line>
           <option name="timeStamp" value="214" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -1282,7 +1265,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/restFrameWork/restApi.js</url>
-          <line>81</line>
+          <line>82</line>
           <option name="timeStamp" value="219" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -1292,13 +1275,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/restFrameWork/controller.js</url>
-          <line>96</line>
+          <line>95</line>
           <option name="timeStamp" value="221" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/restFrameWork/controller.js</url>
-          <line>54</line>
-          <option name="timeStamp" value="222" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/restFrameWork/controller.js</url>
@@ -1667,7 +1645,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/koa2App.js</url>
-          <line>277</line>
+          <line>275</line>
           <option name="timeStamp" value="401" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -1741,11 +1719,6 @@
           <option name="timeStamp" value="441" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/koa2App.js</url>
-          <line>168</line>
-          <option name="timeStamp" value="443" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/test/testRun.js</url>
           <line>17</line>
           <option name="timeStamp" value="445" />
@@ -1758,32 +1731,154 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/test/promise_test.js</url>
           <line>33</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="449" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/test/promise_test.js</url>
           <line>35</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="450" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/test/promise_test.js</url>
           <line>24</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="452" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/test/promise_test.js</url>
           <line>44</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="453" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/restFrameWork/controller.js</url>
+          <line>82</line>
+          <option name="timeStamp" value="456" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/controllers/interface/BaseInterface.js</url>
+          <line>25</line>
+          <option name="timeStamp" value="458" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/controllers/interface/BaseInterface.js</url>
+          <line>94</line>
+          <option name="timeStamp" value="459" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/restFrameWork/restApi.js</url>
+          <line>113</line>
+          <option name="timeStamp" value="460" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/proxy/baseProxy.js</url>
+          <line>62</line>
+          <option name="timeStamp" value="462" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/proxy/baseProxy.js</url>
+          <line>55</line>
+          <option name="timeStamp" value="463" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/componet-service-framework/lib/proxy/baseProxy.js</url>
+          <line>98</line>
+          <option name="timeStamp" value="464" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/proxy/baseProxy.js</url>
+          <line>48</line>
+          <option name="timeStamp" value="465" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/proxy/common.js</url>
+          <line>122</line>
+          <option name="timeStamp" value="467" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/proxy/common.js</url>
+          <line>306</line>
+          <option name="timeStamp" value="468" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/models/basetables.js</url>
+          <line>11</line>
+          <option name="timeStamp" value="472" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/models/basetables.js</url>
+          <line>28</line>
+          <option name="timeStamp" value="473" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/proxy/common.js</url>
+          <line>325</line>
+          <option name="timeStamp" value="474" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/proxy/common.js</url>
+          <line>316</line>
+          <option name="timeStamp" value="475" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/proxy/common.js</url>
+          <line>312</line>
+          <option name="timeStamp" value="477" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/controllers/interface/BaseInterface.js</url>
+          <line>119</line>
+          <option name="timeStamp" value="478" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/controllers/business/BaseBusiness.js</url>
+          <line>73</line>
+          <option name="timeStamp" value="479" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/proxy/common.js</url>
+          <line>321</line>
+          <option name="timeStamp" value="480" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/proxy/DBObjConver.js</url>
+          <line>19</line>
+          <option name="timeStamp" value="481" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/proxy/common.js</url>
+          <line>117</line>
+          <option name="timeStamp" value="482" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/proxy/common.js</url>
+          <line>115</line>
+          <option name="timeStamp" value="483" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/proxy/common.js</url>
+          <line>25</line>
+          <option name="timeStamp" value="484" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/redis/redisTest.js</url>
+          <line>32</line>
+          <option name="timeStamp" value="485" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/redis/redisTest.js</url>
+          <line>31</line>
+          <option name="timeStamp" value="486" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/tcp/tcpServer.js</url>
+          <line>27</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="488" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="454" />
+      <option name="time" value="489" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
@@ -1792,215 +1887,329 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controllers/returnResources.js">
+    <entry file="file://$PROJECT_DIR$/controllers/datatransform/accountTranform.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classMode.js">
+    <entry file="file://$PROJECT_DIR$/routerRegister.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="1254">
+          <caret line="66" column="16" lean-forward="false" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/koa2App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="168" column="4" lean-forward="false" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
+          <folding>
+            <element signature="e#2027#2265#0" expanded="false" />
+            <element signature="e#2268#2575#0" expanded="false" />
+            <element signature="e#2614#4212#0" expanded="false" />
+            <element signature="e#4777#4878#0" expanded="false" />
+            <element signature="e#4883#5034#0" expanded="false" />
+            <element signature="e#5072#6297#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/componet-service-framework/lib/proxy/baseProxy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="96" column="10" lean-forward="false" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proxy/bankAccountsProxy.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="466">
+          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/interface/accountsInterface.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/datatransform/accountTranform.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-855">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/datatransform/RecordApi.js">
+    <entry file="file://$PROJECT_DIR$/common/fileUtils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/resourceConfig.js">
+    <entry file="file://$PROJECT_DIR$/common/excelUtils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-798">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/sms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/email.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/errorUtils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/objectUtils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-460">
+          <caret line="62" column="8" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/componet-data-framework/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="22" column="52" lean-forward="true" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxy/baseProxy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="44" column="11" lean-forward="false" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/restFrameWork/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        <state relative-caret-position="352">
+          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restFrameWork/restApi.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/knex/node_modules/bluebird/js/release/util.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="23" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="285">
+          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/methods/index.js" />
-    <entry file="file://$PROJECT_DIR$/pm2.yml">
+    <entry file="file://$PROJECT_DIR$/node_modules/common-data-utils/lib/proxy/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="2819">
+          <caret line="153" column="5" lean-forward="false" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/koa-router/lib/router.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/componet-data-framework/index.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/controllers/interface/BaseInterface.js" />
-    <entry file="file://$PROJECT_DIR$/controllers/api/accountApi.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/common-data-utils/lib/models/basetables.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="141">
+          <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/business/accountsBusiness.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/controllers/business/BaseBusiness.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="61" lean-forward="false" selection-start-line="3" selection-start-column="61" selection-end-line="3" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/common-data-utils/lib/controllers/common.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/common-data-utils/lib/common/request.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/raw-body/index.js" />
-    <entry file="file://$PROJECT_DIR$/routerRegister.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="46" column="43" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+        <state relative-caret-position="-209">
+          <caret line="73" column="12" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/users_test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state relative-caret-position="57">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proxy/proxyRedis.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/common-data-utils/lib/common/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/componet-service-framework/lib/common/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="81" column="2" lean-forward="true" selection-start-line="81" selection-start-column="2" selection-end-line="81" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/api/accountApi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/interface/accountsInterface.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/koa-router/lib/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="320" column="15" lean-forward="false" selection-start-line="320" selection-start-column="15" selection-end-line="320" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/koa-compose/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/co/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="64" column="18" lean-forward="false" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/controllers/datatransform/BaseDataTranform.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/resourceConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="41" column="39" lean-forward="false" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/serverConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/proxy/retMessage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/proxy/batchQueryUtils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/restFrameWork/restApi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        <state relative-caret-position="2223">
+          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/domain.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/proxy/DBObjConver.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+        <state relative-caret-position="456">
+          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/koatwo-server.yaml">
+    <entry file="file://$PROJECT_DIR$/node_modules/common-data-utils/lib/controllers/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+        <state relative-caret-position="1995">
+          <caret line="105" column="6" lean-forward="false" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proxy/baseProxy.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/controllers/interface/BaseInterface.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        <state relative-caret-position="1786">
+          <caret line="94" column="20" lean-forward="false" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/proxy/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
-          <caret line="88" column="32" lean-forward="false" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssl/jwt_rsa/jwt_rsa_private_key.pem">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
-          <caret line="52" column="39" lean-forward="false" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bundle.js">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="40812">
-          <caret line="957" column="13" lean-forward="false" selection-start-line="957" selection-start-column="13" selection-end-line="957" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2204">
-          <caret line="116" column="9" lean-forward="false" selection-start-line="116" selection-start-column="9" selection-end-line="116" selection-end-column="9" />
+          <caret line="116" column="30" lean-forward="false" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
+    <entry file="file://$PROJECT_DIR$/test/entity/paydetails_test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1501">
-          <caret line="79" column="3" lean-forward="false" selection-start-line="79" selection-start-column="3" selection-end-line="79" selection-end-column="3" />
+        <state relative-caret-position="1444">
+          <caret line="76" column="9" lean-forward="false" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/testAgogo.js">
+    <entry file="file://$PROJECT_DIR$/test/entity/vendorOrders_test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="1520">
+          <caret line="80" column="8" lean-forward="false" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/main_test.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/componet-data-framework/lib/models/basetables.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="361">
+          <caret line="19" column="64" lean-forward="false" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/testFunc.js">
+    <entry file="file://$PROJECT_DIR$/test/entity/vendorRecords_test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="2090">
+          <caret line="110" column="11" lean-forward="false" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -2013,23 +2222,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/redis.js">
+    <entry file="file://$PROJECT_DIR$/test/testFuShu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        <state relative-caret-position="76">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1691">
+          <caret line="89" column="4" lean-forward="false" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/clusterRedis.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/infos_test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2037,106 +2246,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/testRun.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1900">
-          <caret line="100" column="33" lean-forward="false" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/node/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4364">
-          <caret line="1251" column="20" lean-forward="false" selection-start-line="1251" selection-start-column="20" selection-end-line="1251" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/memleak/memleak.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/event/eventTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="28" column="2" lean-forward="true" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/redis/redisTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        <state relative-caret-position="608">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/eureka_apoll/apollConfigTest.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/ioredis/lib/connectors/connector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tcp/tcpClient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tcp/tcpServer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/promise_test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/event/processTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log4js.v2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="909">
-          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/koa2App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-          <folding>
-            <element signature="e#2025#2263#0" expanded="false" />
-            <element signature="e#2266#2573#0" expanded="false" />
-            <element signature="e#2612#4210#0" expanded="false" />
-            <element signature="e#4775#4876#0" expanded="false" />
-            <element signature="e#4881#5032#0" expanded="false" />
-            <element signature="e#5070#6295#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
