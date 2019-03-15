@@ -14,3 +14,10 @@ tcpClient.connect(PORT, HOST, function(){
 tcpClient.on('data', function(data){
     console.log('received: ', data.toString());
 });
+
+
+process.on('SIGINT', function() {
+    console.log('Got SIGINT.  Press Control-D/Control-C to exit.');
+    tcpClient.end();
+    tcpClient.destroy();
+});

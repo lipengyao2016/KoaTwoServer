@@ -18,7 +18,16 @@ var clientHandler = function(socket){
     //当对方的连接断开以后的事件
     socket.on('close', function(){
         console.log(socket.remoteAddress, socket.remotePort, 'disconnected');
-    })
+    });
+
+    socket.on('end', function(){
+        console.log(socket.remoteAddress, socket.remotePort, 'end');
+    });
+
+    socket.on('error', function(){
+        console.log(socket.remoteAddress, socket.remotePort, 'error');
+    });
+
 };
 
 //创建TCP服务器的实例
