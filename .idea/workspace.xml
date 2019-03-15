@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2130195-c6d6-4c05-93aa-45eb9920909e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/udp/udpBroadCastClient.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/udp/udpClient.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/udp/udpServer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/udp/udpGroupClient.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/udp/udpGroupServer.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/test/tcp/tcpClient.js" afterPath="$PROJECT_DIR$/test/tcp/tcpClient.js" />
-      <change beforePath="$PROJECT_DIR$/test/tcp/tcpServer.js" afterPath="$PROJECT_DIR$/test/tcp/tcpServer.js" />
+      <change beforePath="$PROJECT_DIR$/test/udp/udpBroadCastClient.js" afterPath="$PROJECT_DIR$/test/udp/udpBroadCastClient.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,26 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="testFuShu.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/testFuShu.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="redisTest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/redis/redisTest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="connector.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/ioredis/lib/connectors/connector.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -101,11 +79,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="udpBroadCastClient.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="udpBroadCastClient.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/udp/udpBroadCastClient.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="2" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+            <state relative-caret-position="342">
+              <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="udpGroupServer.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/udp/udpGroupServer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="udpGroupClient.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/udp/udpGroupClient.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="55" lean-forward="true" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -212,8 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/amqpLibAllTest.js" />
-        <option value="$PROJECT_DIR$/test/amqpLibSendClient.js" />
         <option value="$PROJECT_DIR$/test/amqpLibRecvClient.js" />
         <option value="$PROJECT_DIR$/test/common.js" />
         <option value="$PROJECT_DIR$/test/infos_test.js" />
@@ -263,6 +259,8 @@
         <option value="$PROJECT_DIR$/test/udp/udpClient.js" />
         <option value="$PROJECT_DIR$/test/udp/udpServer.js" />
         <option value="$PROJECT_DIR$/test/udp/udpBroadCastClient.js" />
+        <option value="$PROJECT_DIR$/test/udp/udpGroupClient.js" />
+        <option value="$PROJECT_DIR$/test/udp/udpGroupServer.js" />
       </list>
     </option>
   </component>
@@ -375,12 +373,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.udpBroadCastClient.js">
-    <configuration name="tcpClient.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="tcpClient.js" working-dir="$PROJECT_DIR$/test/tcp" />
-    <configuration name="tcpServer.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="tcpServer.js" working-dir="$PROJECT_DIR$/test/tcp" />
+  <component name="RunManager" selected="Node.js.udpGroupClient.js">
     <configuration name="testCrpto.js (2)" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="testCrpto.js" working-dir="$PROJECT_DIR$/app" />
     <configuration name="udpBroadCastClient.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="udpBroadCastClient.js" working-dir="$PROJECT_DIR$/test/udp" />
     <configuration name="udpClient.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="udpClient.js" working-dir="$PROJECT_DIR$/test/udp" />
+    <configuration name="udpGroupClient.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="udpGroupClient.js" working-dir="$PROJECT_DIR$/test/udp" />
+    <configuration name="udpGroupServer.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="udpGroupServer.js" working-dir="$PROJECT_DIR$/test/udp" />
     <configuration name="udpServer.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="udpServer.js" working-dir="$PROJECT_DIR$/test/udp" />
     <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
       <node-interpreter value="project" />
@@ -396,19 +394,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Node.js.testCrpto.js (2)" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.tcpServer.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.tcpClient.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.udpServer.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.udpClient.js" />
-      <item index="5" class="java.lang.String" itemvalue="Node.js.udpBroadCastClient.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.udpServer.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.udpClient.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.udpBroadCastClient.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.udpGroupServer.js" />
+      <item index="5" class="java.lang.String" itemvalue="Node.js.udpGroupClient.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.udpBroadCastClient.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.udpServer.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.udpClient.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.tcpClient.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.tcpServer.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.udpGroupClient.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.udpGroupServer.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.udpBroadCastClient.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.udpServer.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.udpClient.js" />
       </list>
     </recent_temporary>
   </component>
@@ -561,7 +559,7 @@
       <workItem from="1552444094308" duration="126000" />
       <workItem from="1552472570712" duration="1612000" />
       <workItem from="1552528326212" duration="4547000" />
-      <workItem from="1552630950714" duration="483000" />
+      <workItem from="1552630950714" duration="785000" />
     </task>
     <task id="LOCAL-00001" summary="1.实现目录，会员卡类型，会员资源。">
       <created>1517222293531</created>
@@ -717,7 +715,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552473797791</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="1.添加客户端UDP测试信息。">
+      <created>1552631448076</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1552631448076</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -753,7 +758,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="590963000" />
+    <option name="totallyTimeSpent" value="591265000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -772,7 +777,7 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41494253" sideWeight="0.5084439" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33103448" sideWeight="0.4849216" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28735632" sideWeight="0.49758744" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24022989" sideWeight="0.49758744" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24969843" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.49155608" order="7" side_tool="false" content_ui="tabs" />
@@ -846,7 +851,8 @@
     <MESSAGE value="1.添加了动态搜索接口URL映射配置，并加入KOA路由的功能。" />
     <MESSAGE value="1.清除node_modules。" />
     <MESSAGE value="1.添加客户端TCP测试信息。" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.添加客户端TCP测试信息。" />
+    <MESSAGE value="1.添加客户端UDP测试信息。" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.添加客户端UDP测试信息。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1884,29 +1890,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/koa2App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="168" column="4" lean-forward="false" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
-          <folding>
-            <element signature="e#2027#2265#0" expanded="false" />
-            <element signature="e#2268#2575#0" expanded="false" />
-            <element signature="e#2614#4212#0" expanded="false" />
-            <element signature="e#4777#4878#0" expanded="false" />
-            <element signature="e#4883#5034#0" expanded="false" />
-            <element signature="e#5072#6297#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/componet-service-framework/lib/proxy/baseProxy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="96" column="10" lean-forward="false" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/proxy/bankAccountsProxy.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
@@ -2268,8 +2251,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/udp/udpBroadCastClient.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="2" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+        <state relative-caret-position="342">
+          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/udp/udpGroupClient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="55" lean-forward="true" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/udp/udpGroupServer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
           <folding />
         </state>
       </provider>

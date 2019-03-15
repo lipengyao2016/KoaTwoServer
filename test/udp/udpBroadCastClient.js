@@ -13,7 +13,6 @@ setInterval(function(){
 },3000);
 
 
-
 // 接收消息
 socket.on('message', function (msg,rinfo) {
     console.log(`receive message from ${rinfo.address}:${rinfo.port}：${msg}`);
